@@ -2,7 +2,6 @@
 
 void setup() {
   
-
 }
 
 //Utilizzo il pin 11 per analogWrite() 
