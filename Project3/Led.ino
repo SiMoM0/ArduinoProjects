@@ -5,9 +5,9 @@ void setup() {
 
 void loop() {
   digitalWrite(13, HIGH);   //Turn on
-  delay(1000);              //wait 200 milliseconds
+  delay(1000);              //wait for a second
   digitalWrite(13, LOW);    //Turn off
-  delay(1000);              //wait 200 milliseconds  
+  delay(1000);              //wait for a second  
   digitalWrite(13, HIGH);   //Turn on
   delay(500);               //wait for half a second
   digitalWrite(13, LOW);    //Turn off
