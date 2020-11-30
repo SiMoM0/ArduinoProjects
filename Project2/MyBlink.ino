@@ -22,10 +22,6 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-//PERMESSI DI SCRITTURA PER LINUX UBUNTU, altrimenti non concede accesso alla porta seriale
-//ls /dev/ttyACM0
-//sudo chmod a+rw /dev/ttyACM0
-
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -34,16 +30,16 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(200);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);  //accende
-  delay(200);                       //aspetta 0,2 secondi
-  digitalWrite(LED_BUILTIN, LOW);   //spegne
-  delay(200);                       //aspetta 0,2 secondi
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(200);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(200);
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(500);                       // wait for half a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(200);                       // wait for 0,2 seconds
+  digitalWrite(LED_BUILTIN, HIGH);  //turn the LED on
+  delay(200);                       //wait 0,2 seconds
+  digitalWrite(LED_BUILTIN, LOW);   //turn the LED off
+  delay(200);                       //wait 0,2 seconds
+  digitalWrite(LED_BUILTIN, HIGH);  //turn the LED on
+  delay(200);                       //wait 0,2 seconds
+  digitalWrite(LED_BUILTIN, LOW);   //turn the LED off
+  delay(200);                       //wait 0,2 seconds
 }
